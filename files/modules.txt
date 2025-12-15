@@ -1,0 +1,8 @@
+python
+oops
+html
+css
+javascript
+anagular
+django
+database

@@ -1,0 +1,1 @@
+This is the test of write() method for writing content to the file.
