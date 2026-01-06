@@ -1,0 +1,133 @@
+# OBJECT-ORIENTED PROGRAMMING
+
+- Here we represent real-world object in the code:
+    -> humans: student, employee, citizen, subscriber, etc.
+    -> tangible objects: chair, table, book, bike, car, phone, etc.
+    -> Intangible objects: emotion, bank account, insurance product
+
+- Every object has:
+    -> Identity
+    -> Attributes / features / characteristics
+    -> Methods / functions / actions
+
+- Human (as an object)
+    -> Attributes (variables)
+        - name = "Rakesh"
+        - age = 23
+        - gender = "Male"
+        - complexion = "Wheatish"
+        - height = 5.5
+        - weight = 65
+        - nationality = "Indian"
+        - ethnicty = "Asian"
+        - education = "graduation"
+        - address = "sirisilla zilla, ..."
+        - bloodgroup = "B+"
+        - ...
+    -> Methods
+        - eating(food_type, quanity, time)
+        - walking(distance, speed, duration)
+        - sleeping(duration, quality)
+        - sitting(on, duration)
+        - talking(subject, audience, duration)
+        - drinking(quantity, duration)
+        - listening(subject, duration)
+        - reading()
+        - teaching()
+        - running
+        - painting
+        - ...
+
+- Mobile phone (as an object)
+    -> Attributes
+        - make = "samsung"
+        - model = "a22"
+        - color = "black"
+        - price = 24000.0
+        - year = 2023   
+        - warranty = 3
+        - camera = True
+        - bluetooth = True
+        - touch_screen = True
+        - ...
+    -> Methods
+        - make_a_call()
+        - take_a_call()
+        - send_message()
+        - receive_message()
+        - connect_to_internet()
+        - disconnect_from_internet()
+        - send_file()
+        - download_file()
+        - ...
+
+### The `Class`
+- A class is a blueprint or template based on which objects are created. A class itself is not an object.
+
+### The `object`
+- An object is created based on a class, object is an instance of a class.
+
+- Syntax for creating a class:
+
+```
+class ClassName:
+    ...
+```
+
+- Use pascal case for naming class:
+    -> Pascal case: StudentInfo
+    -> Camel case: studentInfo
+    -> Snake case: student_info
+    -> kebab case: student-info
+
+### Referrencing attributes of an object:
+-> Reading / getting the value:
+    object_name.attribute
+-> Setting the value:
+    object_name.attribute = value
+
+### Referrencing methods of an object
+-> Calling the method:
+    object_name.method_name([arguments])
+
+### The constructor
+-> A  onstructor is a special method which initializes the attributes of an object at the time of creating an object.
+-> The name of constructor is: __init__(self[, arguments])
+    -> Each argument is used to set a value for an object's attribute.
+-> The 'self' is always a first parameter (argument) of any method in a class, referring the object itself.
+
+
+## OBJECT COMPOSITION
+- In the real-world objects interact with each other.
+- Or we combine objects, which is called object composition.
+
+Dice                Die
+------              -------
+list        ->      value
+rollAll()   ->      roll()
+addDie()
+
+Die
+----
+value
+roll()
+
+
+## Encapsulation
+We can hide the attributes from directly accessing outside of a class.
+This is called encapsulation or data hiding.
+
+When you hide access to the attributes from outside then those attributes are private attributes.
+When the atrributes are accessible from outside then they are public attributes.
+
+To make an attribute private just add double underscore in front of the attribute name.
+
+Public attribute            Private attribute
+-------------------         ------------------
+value                       __value
+list                        __list
+
+However, we can access the hidden attributes using public methods.
+There are two types of methods to work with private attributes:
+    - Getter methods: read (get) the value of a private attribute`
+    - Setter methods: write (set) the value of a private attribute
