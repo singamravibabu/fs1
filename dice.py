@@ -14,10 +14,12 @@ class Die:
             self.__value = value
     def roll(self):
         self.__value = random.randint(1, 6)
-        
+
 class Dice:
     def __init__(self):
         self.__list = []
+    def getList(self):
+        return self.__list
     def rollAll(self):
         for die in self.__list:
             die.roll()

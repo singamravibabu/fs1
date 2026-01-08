@@ -9,5 +9,5 @@ for i in range(num):
     dice.addDie(die)
 
 dice.rollAll()
-for die in dice.list:
-    print(die.value, end=" ")
+for die in dice.getList():
+    print(die.getValue(), end=" ")

@@ -131,3 +131,56 @@ However, we can access the hidden attributes using public methods.
 There are two types of methods to work with private attributes:
     - Getter methods: read (get) the value of a private attribute`
     - Setter methods: write (set) the value of a private attribute
+
+
+Exercise:
+    Product class
+        Attributes: name, price, discountPercent
+            price is private attribute
+            use properties to create getter and setters methods
+            price cannot be negative
+
+## INHERITANCE
+- Inheritance lets you create new classes based on the existing classes.
+- The new class created is called child class, subclass or derived class.
+- The existing class is called parent class, super class or base class.
+
+- The new class now can inherit the attributes and methods of the parent class.
+- The new class can add more attributes and methods, and additionally it can override the inherited parent's class methods.
+- The child class will override a parent's class method by coding the a method with the same name as in parent class.
+
+
+Parent and child classes:
+
+Product: (parent)
+        name
+        price
+        discountPercent
+        getDiscountAmount()
+        getDiscountPrice()
+        getDescription()
+    - Book: (child)
+        author
+        getDescription()    # override parent class method
+    - Movie (child)
+        year
+        getDescription()    # overriding parent class method
+
+
+Syntax for defining a Child class:
+
+class ChildClassName(ParentClassName):
+    ...
+
+
+Exercies:
+
+Animal:
+    Dog:
+    Tiger:
+
+Vehicle:
+    Bike:
+    Car:
+    Truck:
+    Bus:
